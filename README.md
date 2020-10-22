@@ -1,2 +1,4 @@
 # OpenFR
-Baseline fingerprint recognition
+A collection of Python modules implementing the main steps in fingerprint recognition.
+
+## Fingerprint segmentation module
