@@ -1,5 +1,5 @@
 # OpenFR
-A collection of Python modules, using OpenCV and NumPy, implementing the main steps in fingerprint recognition.
+A collection of Python modules, using OpenCV and NumPy, that implement the main steps in fingerprint recognition.
 
 ## Fingerprint segmentation module
 Fingerprint segmentation is the first step of most fingerprint recognition algorithms. This module implements a simple but fast and effective method for fingerprint segmentation. Experimental results on FVC2000, FVC2002, and FVC2004 databases shows that the performance of this software is aligned to other state-of-the-art techniques.
