@@ -5,13 +5,14 @@ A collection of Python modules, using OpenCV and NumPy, implementing the main st
 Fingerprint segmentation is the first step of most fingerprint recognition algorithms. This module implements a simple but fast and effective method for fingerprint segmentation. Experimental results on FVC2000, FVC2002, and FVC2004 databases shows that the performance of this software is aligned to other state-of-the-art techniques.
 
 ### Files
-- segmentation.py: Python module
+- segmentation.py: Python module.
 - segmentation.ipynb: Jupyter notebook containing examples and a simple framework for optimizing parameters and testing on FVC databases.
 
 ### Performance results
-The accuracy of this module was measured following the same protocol in \[1\], using FVC2000/2002/2004 databases and the ground truth information kindly provided by the authors of \[1\]. The following table reports segmentation error rates of some state of the art approaches and of this segmentation algorithm. As in \[1\], parameters were optimized on FVC sets "B" and the tests were performed on sets "A".
+The accuracy of this module was measured following the same protocol adopted in \[1\], using FVC2000/2002/2004 databases and the ground truth information kindly provided by the authors of \[1\]. The following table reports segmentation error rates of some state-of-the-art approaches and of this segmentation algorithm. As in \[1\], parameters were optimized on FVC sets "B" and the tests were performed on sets "A".
+Despite its simplicity, the algorithm implemented in this module is, on the average, more accurate than all the other ones.
 
-| Database | GFB [8] | HCR [9] | MVC [7] | STFT [10] | FDB [1] | ??? [???] | OpenFR |
+| Database | GFB [3]<sup>*</sup> | HCR [4]<sup>*</sup> | MVC [2]<sup>*</sup> | STFT [5]<sup>*</sup> | FDB [1] | BioLab [6] | OpenFR |
 | --- | ---:| ---:| ---:| ---:| ---:| ---:| ---:|
 | FVC2000-DB1 | 13.26 | 11.15 | 10.01 | 16.70 |  5.51 | 6.83 | 4.71	|
 | FVC2000-DB2 | 10.27 |  6.25 | 12.31 |  8.88 |  3.55 | 4.57 | 4.14	|
@@ -27,5 +28,12 @@ The accuracy of this module was measured following the same protocol in \[1\], u
 | FVC2004-DB4 |  5.96 |  5.15 |  4.58 |  5.18 |  2.79 | 5.00 | 2.80	|
 | Average     |  8.33 |  5.78 |  6.51 |  7.57 |  3.30 | 5.31 | 3.19 |
 
+<sup>*</sup>As reported in [1].
 
-\[1\] Thai DH, Huckemann S, Gottschlich C (2016) Filter Design and Performance Evaluation for Fingerprint Image Segmentation. PLoS ONE 11(5): e0154160. https://doi.org/10.1371/journal.pone.0154160
+[1] Thai DH, Huckemann S, Gottschlich C (2016) Filter Design and Performance Evaluation for Fingerprint Image Segmentation. PLoS ONE 11(5).  
+[2] Bazen AM, Gerez SH. Segmentation of Fingerprint Images. In: Proc. ProRISC. Veldhoven, The Netherlands; 2001. p. 276–280.  
+[3] Shen LL, Kot A, Koo WM. Quality measures of fingerprint images. In: Proc. AVBPA. Halmstad, Sweden; 2001. p. 266–271.  
+[4] Wu C, Tulyakov S, Govindaraju V. Robust point-based feature fingerprint segmentation algorithm. In: Proc. ICB 2007. Seoul, Korea; 2007. p. 1095–1103.  
+[5] Chikkerur S, Cartwright A, Govindaraju V. Fingerprint image enhancement using STFT analysis. Pattern Recognition. 2007; 40(1):198–211.  
+[6] R. Cappelli, M. Ferrara, and D. Maio, "A Fast and Accurate Palmprint Recognition System Based on Minutiae," IEEE Transactions on Systems, Man, and Cybernetics, Part B: Cybernetics, 2012.  
+
